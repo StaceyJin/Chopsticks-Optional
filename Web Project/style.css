@@ -1,0 +1,83 @@
+header, nav, main, footer {display: block; }
+body {  background-color: #FBF3E2;
+		color: #542E02;
+		font-family: Bahnschrift, sans-serif;}
+#wrapper {margin-left:auto;
+		margin-right:auto;
+		width: 90%;}
+header {background-color:#422B90;
+		background-image: linear-gradient(#FBF3E2, #757EEE); }
+nav { color: #422B90;
+	 font-weight:bolder;
+	 font-size: 14pt;
+	 float: left;
+	 width: 200px;
+	 padding-right: 25px; }
+nav a {text-decoration: none; }
+nav ul	{list-style-type: none; }
+nav a:link {color: #422B90; }
+nav a:visited {color: #542E02; }
+nav a:hover {color: #5258A4; }
+footer {color: #422B90; }
+sup {font-size: 0.5em; }
+#comments { color:#5258A4; }
+#highlight { color: #422B90; }
+dt { text-align: auto;}
+#picr {float:right; padding: 5px;}
+#picl {float:left; padding: 5px;}
+#pic { padding: 5px; }
+p {padding: 20px 10px;}
+main { margin: 0 135px 0 175px;}
+a {text-decoration: none; }
+.center { display: block;
+		  margin-left: auto;
+		  margin-right: auto; }
+#gallery { position: relative; }
+#gallery ul { width: 500px; list-style-type: none; }
+#gallery li { display: inline; float: left; padding: 10px; }
+#gallery img { border-style: none; }
+#gallery a { text-decoration: none; color: #422B90; font-family: sans-serif; }
+#gallery span { display: none; }
+#gallery a:hover span { display: block; position: absolute; 
+						top: 10px; right: 0px; text-align: center; }
+#clear { clear: both; }
+table {margin-left: auto;
+		margin-right: auto;
+		border: 3px solid #422B90;
+		border-collapse: collapse;
+		margin-bottom: 1em; }
+td, th { padding: 5px;
+		 border: 2px solid #422B90; }
+td:nth-of-type(even) { background-color: #D2D6F9; }
+						
+@media only screen and (max-width: 1024px) {
+	body { margin: 0; }
+	body, main, header { margin-left: 75px; }
+	nav { float: none;
+		  width: auto; }
+	nav li { display: inline-block;
+			 padding: 0.5em; }
+	nav ul { text-align: center; }
+	h1, h2 { font-size: 120%; }
+	p { font-size: 90%; }
+	#wrapper { width: auto; }
+	#pic { max-width: 90%;
+		   height: auto; }
+	#gallery a:hover span { display: none; }
+	#gallery span { display: none; }
+}	
+
+@media only screen and (max-width: 768px) {
+	body, main, header { margin-left: 25px; 
+						 margin-right: 15px; }
+	h1, h2 { font-size: 175%; }
+	p { font-size: 90%; 
+		padding: 0;}
+	nav, nav ul, nav li { padding: 0; }
+	nav li { display: inline; }
+	nav a { display: block; }
+	#gallery a:hover span { display: none; }
+	#gallery span { display: none; }
+	#gallery li { padding: 5px; }
+	#wrapper { width: 85%; }
+}	
